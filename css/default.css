@@ -1,0 +1,22 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #222226;
+}
+#card{
+    width: 360px;
+    padding: 50px;
+    margin: 160px auto 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 12px 24px rgba(0,0,0,.8)
+}
+#card>h1,#card>h2{
+    text-align: center;
+    font-family: "Microsoft YaHei";
+
+}
+

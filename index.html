@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+<?xml version='1.0' encoding='UTF-8'?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/processdef">
+ </definitions>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>B612小行星</title>
+    <link rel="stylesheet" type="text/css" href="https://yang-b612.oss-cn-shanghai.aliyuncs.com/css/default.css">
+    <script type="text/javascript" 
+    src="https://yang-b612.oss-cn-shanghai.aliyuncs.com/js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            function writeTime(){
+            var nowDate = new Date();
+            var nowYear = nowDate.getFullYear();
+            var nowMonth = nowDate.getMonth()+1; 
+            var nowDa = nowDate.getDate(); 
+            var nowWe = nowDate.getDay();
+            var nowHour = nowDate.getHours(); 
+            var nowMinute = nowDate.getMinutes(); 
+            var nowSecond = nowDate.getSeconds(); 
+            $("#card>h1").text(nowHour+":"+nowMinute+":"+nowSecond);
+            $("#card>h2").text(nowYear+"-"+nowMonth+"-"+nowDa+"星期"+nowWe);
+            }
+            var SetTime = window.setInterval(writeTime, 1000);
+        });
+
+    </script>
+</head>
+<body>
+    <div id="card">
+        <h1>写什么好呢</h1>
+        <h2>不告诉你</h2>
+    </div><!-- #card end -->
+</body>
+</html>
